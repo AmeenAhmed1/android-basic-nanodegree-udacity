@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+    <string name="business_name">Coffee Shop [Ameen]</string>
+    <string name="email">Email: ameenahmed386@gmail.com</string>
+    <string name="phone">Phone: +201023267057</string>
+    <string name="hours">Opens: 09:00 AM To 12:00 PM</string>
+</resources>
