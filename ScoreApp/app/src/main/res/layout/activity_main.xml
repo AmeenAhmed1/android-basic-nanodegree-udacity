@@ -28,7 +28,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Team A"
+                    android:text="Team A "
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -40,6 +40,26 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="10"
+                    android:textColor="@android:color/black"
+                    android:textSize="100sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fouls"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textTeamAFoul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
                     android:textColor="@android:color/black"
                     android:textSize="100sp"
                     android:textStyle="bold" />
@@ -77,6 +97,29 @@
                     android:text="+3"
                     android:textColor="@android:color/white" />
 
+                <Button
+                    android:id="@+id/btnTeamASix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="4dp"
+                    android:text="+6"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnTeamAFoul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="4dp"
+                    android:text="Foul"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
             </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -102,6 +145,26 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="5"
+                    android:textColor="@android:color/black"
+                    android:textSize="100sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fouls"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textTeamBFoul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
                     android:textColor="@android:color/black"
                     android:textSize="100sp"
                     android:textStyle="bold" />
@@ -137,6 +200,29 @@
                     android:background="@color/colorPrimary"
                     android:elevation="4dp"
                     android:text="+3"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnTeamBSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="4dp"
+                    android:text="+6"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnTeamBFoul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="4dp"
+                    android:text="Foul"
+                    android:textAllCaps="false"
                     android:textColor="@android:color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
