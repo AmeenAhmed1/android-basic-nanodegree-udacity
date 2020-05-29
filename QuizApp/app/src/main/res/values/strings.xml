@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="Question1">Q1: How to store heavy structured data in android?</string>
+    <string name="Question2">Q2: What is the main programming language for Android development?</string>
+    <string name="Question3">Q3: What is log message in android?</string>
+    <string name="Question4">Q4: Java is OOP Language [True / False]</string>
+</resources>

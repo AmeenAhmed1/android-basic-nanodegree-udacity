@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingBottom="26dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/Question1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/q1Radiogroup"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q1RadiobuttonShared"
+                android:layout_width="wrap_content"
+                android:text="Shared Preferences"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q1RadiobuttonCursor"
+                android:layout_width="wrap_content"
+                android:text="Cursor"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q1RadiobuttonSql"
+                android:layout_width="wrap_content"
+                android:text="SQlite database"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q1RadiobuttonNot"
+                android:layout_width="wrap_content"
+                android:text="Not possible"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/Question2"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxPhp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PHP" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Java" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxHtml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HTML" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxKotlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kotlin" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/Question3"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/q3Radiogroup"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q3RadiobuttonLog"
+                android:layout_width="wrap_content"
+                android:text="Log message is used to debug a program."
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q3RadiobuttonPrint"
+                android:layout_width="wrap_content"
+                android:text="Same as printf()"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q3RadiobuttonToast"
+                android:layout_width="wrap_content"
+                android:text="Same as Toast()."
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/q3RadiobuttonNone"
+                android:layout_width="wrap_content"
+                android:text="None of the above."
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/Question4"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_marginTop="16dp"
+            android:id="@+id/q4EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/resultBtn"
+                android:layout_width="match_parent"
+                android:text="Result"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="match_parent"
+                android:text="Reset"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
