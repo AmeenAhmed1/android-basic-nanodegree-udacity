@@ -14,10 +14,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     int result = 0;
 
-    CheckBox q2CheckboxPhp, q2CheckboxJava, q2CheckboxKotlin, q2CheckboxHtml;
-    RadioGroup q1RadioGroup, q3RadioGroup;
+    CheckBox q2CheckboxPhp;
+    CheckBox q2CheckboxJava;
+    CheckBox q2CheckboxKotlin;
+    CheckBox q2CheckboxHtml;
+
+    RadioGroup q1RadioGroup;
+    RadioGroup q3RadioGroup;
+
     EditText q4EditText;
-    Button resultBtn, resetBtn;
+
+    Button resultBtn;
+    Button resetBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +59,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (isTrueQ3()) result++;
                 if (isTrueQ4()) result++;
 
-                Toast.makeText(this, "Your score is " + result + "/4", Toast.LENGTH_LONG).show();
+                if (result == 4)
+                    Toast.makeText(this, "All your answers are correct " + result + "/4", Toast.LENGTH_LONG).show();
+                else
+                    Toast.makeText(this, "Your score is " + result + "/4", Toast.LENGTH_SHORT).show();
+
+                result = 0;
                 break;
 
 
@@ -62,7 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private boolean isTrueQ1() {
-        return (q2CheckboxJava.isChecked() && q2CheckboxKotlin.isChecked());
+        return (q2CheckboxJava.isChecked() && q2CheckboxKotlin.isChecked()
+                && !q2CheckboxHtml.isChecked() && !q2CheckboxPhp.isChecked());
     }
 
     private boolean isTrueQ2() {

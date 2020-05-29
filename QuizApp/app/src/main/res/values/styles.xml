@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="QuestionStyle">
+        <item name="android:layout_marginTop">@dimen/dim_16dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_weight">1</item>
+    </style>
 </resources>
